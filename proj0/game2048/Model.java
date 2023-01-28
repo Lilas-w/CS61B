@@ -1,6 +1,5 @@
 package game2048;
 
-import javax.swing.*;
 import java.util.Formatter;
 import java.util.Observable;
 
@@ -139,14 +138,6 @@ public class Model extends Observable {
      * */
     public static boolean emptySpaceExists(Board b) {
         // TODO: Fill in this function.
-        int size = b.size();
-        for (int i = 0;i < size;i += 1){
-            for(int j = 0;j < size;j += 1){
-                if(b.tile(i, j) == null){
-                    return true;
-                }
-            }
-        }
         return false;
     }
 
